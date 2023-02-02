@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+
+    <link rel="stylesheet" href="/static/style1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="/hello">Hello</a></li>
+                <li><a href="/user/Gautham">User</a></li>
+                <li><a href="/greeting/Gautham">Greeting</a></li>
+                <li><a href="/">Log Out</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+
+
+    <section class="landing">
+        <div class="heading">
+            <h1>Web Development using Python</h1>
+            <h3>Add-On Course by Sajanraj</h3>
+        </div>
+
+        <div class="welcome">
+            {% if name %}
+                <h4>Hello {{ name }}!</h4>
+            {% endif %}
+        </div>
+
+        <div class="container">
+    
+            <div class="intro">
+                <p>Web programming, also known as web development, is the creation of dynamic web applications. There are two broad divisions of web development – front-end development (also called client-side development) and back-end development (also called server-side development). 
+                    <ul>
+                        <li>Front-end development refers to constructing what a user sees when they load a web application – the content, design and how you interact with it. This is done with three codes – HTML, CSS and JavaScript.</li>
+                        <li>Back-end development controls what goes on behind the scenes of a web application. A back-end often uses a database to generate the front-end.</li>
+                    </ul>
+                </p>
+                <p>Web developers create and maintain websites. They are also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle. In addition, web developers may create content for the site.</p>
+                <p>Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.</p>
+                <p>When the Flask application handles a request, it creates a Request object based on the environment it received from the WSGI server. Because a worker (thread, process, or coroutine depending on the server) handles only one request at a time, the request data can be considered global to that worker during that request.</p>
+            </div>
+
+            <div class="web-dev-img">
+                <img src="/static/reqmap.png" align="middle" scale= />
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
